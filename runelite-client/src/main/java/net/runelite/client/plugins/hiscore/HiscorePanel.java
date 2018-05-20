@@ -253,6 +253,18 @@ public class HiscorePanel extends PluginPanel
 					}
 
 					@Override
+					public void mousePressed(MouseEvent e)
+					{
+						panel.setBackground(ColorScheme.DARKER_GRAY_COLOR);
+					}
+
+					@Override
+					public void mouseReleased(MouseEvent e)
+					{
+						panel.setBackground(ColorScheme.DARKER_GRAY_COLOR.brighter().brighter());
+					}
+
+					@Override
 					public void mouseEntered(MouseEvent e)
 					{
 						panel.setBackground(ColorScheme.DARKER_GRAY_COLOR.brighter().brighter());
